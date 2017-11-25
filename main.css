@@ -149,7 +149,7 @@ main {
 .hero {
   width: 100%;
   position: relative;
-  background-image: url("./images/udacity.png");
+  background-image: url("images/Udacity.png");
   background-size: cover;
   min-height: 300px;
 }
@@ -327,12 +327,13 @@ main {
   border-bottom: 1px dashed darkturquoise;	
   clear: both;
   margin: 24px 0;
+  padding: 1px 0;    
 }
 
 .snippet__thumbnail {
   width: 100px;
   float: left;
-  margin-right: 1em;
+  margin-right: 1em;    
 }
 
 .snippet__title {

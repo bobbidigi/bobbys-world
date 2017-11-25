@@ -55,7 +55,7 @@ body {
   .snippet__title {
   }
 
-  .snippet__thumbnail {
+  .snippet__thumbnail { 
     width: 30%;
     margin: 0;
   }
@@ -72,7 +72,7 @@ body {
 
   .snippet__thumbnail {
     width: 30%;
-    height: 150px;
+    height: 150px;  
     margin-right: 0;
   }
 
