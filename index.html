@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="responsive.css">
     <link rel="stylesheet" type="text/css" href="final.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -32,10 +33,10 @@
 
     <nav id="drawer" class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#">News</a></li>
-        <li class="nav__item"><a href="#">Events</a></li>
-        <li class="nav__item"><a href="#">Culture</a></li>
-        <li class="nav__item"><a href="#">Blog</a></li>
+        <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">About</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">Portfolio</a></li>
+        <li class="nav__item"><a href="https://github.com/bobbidigi">Recent</a></li>
       </ul>
     </nav>
 
@@ -52,16 +53,16 @@
           <h2 class="news__title">Recent accomplishments<a href="#" class="news__more">+ more</a></h2>
           <ul>
             <li class="top-news__item wow bounceInRight">
-              <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893">Free Google responsive web design fundamentals.</a>
+              <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893">Responsive web design fundamentals course by Google.</a>
             </li>
             <li class="top-news__item wow bounceInRight">
-              <a href="https://www.udacity.com/course/responsive-images--ud882">Free Google responsive images course.</a>
+              <a href="https://www.udacity.com/course/responsive-images--ud882">Responsive images course by Google.</a>
             </li>
             <li class="top-news__item wow bounceInRight">
               <a href="https://github.com/180-days-of-code/challenge">Organized a group project on gitHub.</a>
             </li>
             <li class="top-news__item wow bounceInRight">
-              <a href="https://www.codecademy.com/learn/learn-sass">Codecademy Sass and scss.</a>
+              <a href="https://www.codecademy.com/learn/learn-sass">Sass and scss course on CodeCademy.</a>
             </li>
           </ul>
         </section>
@@ -70,7 +71,7 @@
          <!-- random design quotes   -->
         <article class="quote-box">
             <div class="quote-start"><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i></div>
-            <h4 class="quote"> </h4>
+            <h5 class="quote"> </h5>
             <h5 class="quote-author"></h5>
             <div class="quote-end"><i class="fa fa-quote-right fa-lg" aria-hidden="true"></i></div>
         </article>
@@ -78,85 +79,79 @@
 
         <section class="weather">
           <span id ="city" class="weather__location"></span>
-          <span id="clouds" class="weather__desc"></span>
           <span class="weather__today">
-          <img class="weather__today__image" src="images/weather.png" alt="icon of a partially cloudy day">
-         <span id="temp" class="weather__today__temp"></span>
-		 <span class="weather__today__deg"></span>
+           <ul>
+               <li> <span id="clouds" class="weather__desc"></span></li>
+               <li><img class="weather__today__image" src="images/weather.png" alt="icon of a partially cloudy day"></li>
+               <li><span id="temp" class="weather__today__temp"></span></li>
+           </ul>
+<!--		    <span class="weather__today__deg"></span>-->
           </span>
+
           <ul class="weather__next">
             <li class="weather__next__item">
               <span>Mon</span>
               <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
-              <span>13 &deg;C</span>
             </li><li class="weather__next__item">
               <span>Tues</span>
               <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
-              <span>13 &deg;C</span>
             </li><li class="weather__next__item">
               <span>Wed</span>
               <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
-              <span>13 &deg;C</span>
             </li><li class="weather__next__item">
               <span>Thu</span>
               <img class="weather__next__image" src="images/rain.png" alt="icon of a rainy day">
-              <span>13 &deg;C</span>
             </li><li class="weather__next__item">
               <span>Fri</span>
               <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
-              <span>13 &deg;C</span>
             </li>
           </ul>
         </section>
 
         <section class="news recent-news">
-          <h2 class="news__title">Recent projects <a href="#" class="news__more">+ more</a></h2>
+          <h2 class="news__title">Recent projects <a href="#" class="news__more" >+ more</a></h2>
           <ul>
-            <li class="snippet wow bounceInRight">
+            <li class="snippet">
               <div class="snippet__thumbnail">
-                <img src='images/dog_small.jpg' alt="picture of a girl with a large, stuffed dog toy">
+                <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
               </div>
-              <h3 class="snippet__title"><a href="http://www.allentowngroup.com/tap-dat/">Tap Dat</a></h3>
+              <h3 class="snippet__title"><a href="http://www.allentowngroup.com/tap-dat/" target="_blank">Tap Dat</a></h3>
               <p class="snippet__description">Tap Dat is a portable animation and sound kit. With the touch of a finger create melodies charged with moving shapes. Warning: contains flashing images.
               </p>
             </li>
-            <li class="snippet wow bounceInRight">
+            <li class="snippet">
               <div class="snippet__thumbnail">
-                <img src='images/dog_small.jpg' alt="picture of a girl with a large, stuffed dog toy">
+                <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
               </div>
-              <h3 class="snippet__title"><a href="#">Organic raw keffiyeh four loko.</a></h3>
-              <p class="snippet__description">Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice loko.
+              <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/JOXZLZ" target="_blank">Made a pretty cool login form</a></h3>
+              <p class="snippet__description">Using a Treehouse tutorial I made a nice login form.
+              </p>
+            </li>
+            <li class="snippet">
+              <div class="snippet__thumbnail">
+                <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
+              </div>
+              <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/EbNBoo" target="_blank">Made a to-do-list</a></h3>
+              <p class="snippet__description">Using javascript I made a to-do list.
               </p>
             </li>
             <li class="snippet wow bounceInRight">
               <div class="snippet__thumbnail">
-                <img src='images/dog_small.jpg' alt="picture of a girl with a large, stuffed dog toy">
+                <img src='images/bot.jpg' alt="picture of a girl with a large, stuffed dog toy">
               </div>
-              <h3 class="snippet__title"><a href="#">Kickstarter art party cronut scenester.</a></h3>
-              <p class="snippet__description">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
-              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko.
-              </p>
-            </li>
-            <li class="snippet wow bounceInRight">
-              <div class="snippet__thumbnail">
-                <img src='images/dog_small.jpg' alt="picture of a girl with a large, stuffed dog toy">
-              </div>
-              <h3 class="snippet__title"><a href="#">Squid lomo Kickstarter art party cronut </a></h3>
-              <p class="snippet__description">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
-              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko.
+              <h3 class="snippet__title"><a href="twitter.com/LondonArtz" target="_blank">Twitter bot</a></h3>
+              <p class="snippet__description">This was a spontaneous team project with Sirani McNeill. We made a Twitter bot using python.
               </p>
             </li>
           </ul>
         </section>
       </section>
       
-     
-      
       <footer>
         <ul>
-          <li><a href="http://www.allentowngroup.com/" target="_blank">Contact</a></li>
-          <li><a href="https://twitter.com/bobbidigi0" target="_blank">Follow On Twitter</a></li>
-          <li><a href="https://github.com/bobbidigi/" target="_blank">gitHub</a></li>
+          <li><a href="http://www.allentowngroup.com/" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+          <li><a href="https://twitter.com/bobbidigi0" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Follow </a></li>
+          <li><a href="https://github.com/bobbidigi/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> gitHub</a></li>
         </ul>
       </footer>
     </main>

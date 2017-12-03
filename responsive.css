@@ -1,38 +1,40 @@
-.content {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.header__menu {
-  display: none;
-}
-
-.hero, .top-news, .scores, .weather, .recent-news {
-  order: 10;
-}
 @media screen and (max-width: 320px){
     .header__logo{
         position: absolute; 
         -webkit-transform: translate(-300px, 0);
         transform: translate(-300px, 0);
+        vertical-align: top;
+        margin-top: 8px;
+        margin-left: 8px;	
+    }
+    .weather__next__item{
+        display: none;
     }
 }
 @media screen and (max-width: 399px){
-    .header__logo{
-        width: 20%; 
-        height: 70%;
+    .header__logo{ 
+        vertical-align: top;
+        margin-top: 9px;
+        margin-left: 9px;	
     }
 }
 @media screen and (max-width: 575px){
     .header__logo{
         height: 38px; 
+        vertical-align: top;
+        margin-top: 10px;
+        margin-left: 10px;	
     }
 }
 @media screen and (max-width: 610px) {
   .header__logo {
 	margin-left: auto;  
     height: 48px;
-    margin-right: 0.5em; 
+    margin-right: 0.5em;
+    vertical-align: top;
+    margin-top: 12px;
+    margin-left: 1em;	  
   }
   .header__title {
     position: absolute;
@@ -40,20 +42,21 @@
     font-size: 2em;
     vertical-align: bottom; 
   }
-  .nav {
+    
+.nav {
     z-index: 10;
     background-color: #fff;
-    width: 300px;
+    width: 100%;
     position: absolute;
     /* This trasform moves the drawer off canvas. */
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
     /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
-  }
+  }    
   .nav.open {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+    transform: translate(0, 0); 
   }
   .nav__item {
     display: list-item;
@@ -110,7 +113,7 @@
 }
 
 @media screen and (min-width: 850px) {
-  main, .header__inner, .nav, .content {
+  main, .header__inner, .content {
     width: 850px;
     margin-left: auto;
     margin-right: auto;

@@ -55,7 +55,7 @@ $(document).ready(function(){
   }); 
 function getQuote() {
     var cb = Math.round(new Date().getTime() / 1000);
-    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=" + cb, function(a) {
+    $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=" + cb, function(a) {
         console.log(a);
         var currentQuote = a[0].content;
         var quoteAuthor = a[0].title;
