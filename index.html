@@ -34,7 +34,7 @@
     <nav id="drawer" class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">About</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item contactBtn"><a href="#none">Contact</a></li>
         <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">Portfolio</a></li>
         <li class="nav__item"><a href="#recent">Recent</a></li>
       </ul>
@@ -52,6 +52,9 @@
         <section class="news top-news" id="recent">
           <h2 class="news__title">Recent accomplishments<a href="#" class="news__more">+ more</a></h2>
           <ul>
+            <li class="top-news__item wow bounceInRight">
+              <a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/">The web developer bootcamp - Colt Steele.</a>
+            </li> 
             <li class="top-news__item wow bounceInRight">
               <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893">Responsive web design fundamentals course by Google.</a>
             </li>
@@ -123,6 +126,14 @@
               <div class="snippet__thumbnail">
                 <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
               </div>
+              <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/gGJvZO" target="_blank">Guess the RGB color</a></h3>
+              <p class="snippet__description">A fun game of guessing the RGB color.
+              </p>
+            </li>
+            <li class="snippet">
+              <div class="snippet__thumbnail">
+                <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
+              </div>
               <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/JOXZLZ" target="_blank">Made a pretty cool login form</a></h3>
               <p class="snippet__description">Using a Treehouse tutorial I made a nice login form.
               </p>
@@ -147,7 +158,7 @@
         </section>
       </section>
       
-      <section class="contact">
+      <section class="contact none" id="none">
         <form action="https://formspree.io/bobbidigi34@gmail.com" method="POST" name="my_form">
           <fieldset>
             <legend align="left"><span class="number">1</span> Profile</legend>
@@ -196,7 +207,7 @@
       var menu = document.querySelector('#menu');
       var main = document.querySelector('main');
       var drawer = document.querySelector('.nav');
-
+          
       menu.addEventListener('click', function(e) {
         drawer.classList.toggle('open');
         e.stopPropagation();
@@ -204,7 +215,14 @@
       main.addEventListener('click', function() {
         drawer.classList.remove('open');
       });
-
+        
+      var contact_btn = document.querySelector('.contactBtn');
+      var display_none = document.querySelector('.none');
+        
+      contact_btn.addEventListener('click', function(){
+        display_none.classList.toggle('none');
+      });
+        
     </script>
 <!--   weather-->
      <script type="text/javascript" src="weather.js"></script>
