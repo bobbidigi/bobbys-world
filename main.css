@@ -342,7 +342,79 @@ main {
   text-decoration: underline;
 }
 
+/*
+*
+* contact
+*
+*/
+form{
+  padding: 2.5%;
+/*   background: #f1f1f1; */
+  width: 500px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+fieldset{
+ border: 1px solid lightgreen;
+ border-radius: 5px;
+ padding: 10px 15px;
+}
+legend{
+  display: inline;
+  font-weight: bold;
+  padding: 20px 0;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.number{
+  color: #fff;
+  padding: 4px 10px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  margin-right: 2%;
+}
+label{
+  color: lightgreen; 
+  margin-bottom: 105px;
+  font-weight: bold;
+  border: none;
+}
 
+textarea{
+  background-color: #f1f1f1;
+  padding: 5px;
+  line-height: 1.25em;
+  color: black;
+  width: 95%;
+  border: 1px solid lightgreen;
+  margin-bottom: 20px;
+}
+select{
+  margin-bottom: 20px;
+  border: 1px solid lightgreen;
+}
+button{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: #fff;
+  background: lightgreen;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 2% 0;
+}
+.text{
+  background-color: #f1f1f1;
+  line-height: 1.5em;
+  padding: 5px;
+  border: 1px solid lightgreen;
+  margin-bottom: 15px;
+  width: 95%;
+}
 /*
  *
  * Footer

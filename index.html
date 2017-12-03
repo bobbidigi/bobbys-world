@@ -36,7 +36,7 @@
         <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">About</a></li>
         <li class="nav__item"><a href="#">Contact</a></li>
         <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">Portfolio</a></li>
-        <li class="nav__item"><a href="https://github.com/bobbidigi">Recent</a></li>
+        <li class="nav__item"><a href="#recent">Recent</a></li>
       </ul>
     </nav>
 
@@ -49,7 +49,7 @@
           </article>
         </section>
 
-        <section class="news top-news">
+        <section class="news top-news" id="recent">
           <h2 class="news__title">Recent accomplishments<a href="#" class="news__more">+ more</a></h2>
           <ul>
             <li class="top-news__item wow bounceInRight">
@@ -135,11 +135,11 @@
               <p class="snippet__description">Using javascript I made a to-do list.
               </p>
             </li>
-            <li class="snippet wow bounceInRight">
+            <li class="snippet">
               <div class="snippet__thumbnail">
                 <img src='images/bot.jpg' alt="picture of a girl with a large, stuffed dog toy">
               </div>
-              <h3 class="snippet__title"><a href="twitter.com/LondonArtz" target="_blank">Twitter bot</a></h3>
+              <h3 class="snippet__title"><a href="https://twitter.com/LondonArtz" target="_blank">Twitter bot</a></h3>
               <p class="snippet__description">This was a spontaneous team project with Sirani McNeill. We made a Twitter bot using python.
               </p>
             </li>
@@ -147,9 +147,43 @@
         </section>
       </section>
       
+      <section class="contact">
+        <form action="https://formspree.io/bobbidigi34@gmail.com" method="POST" name="my_form">
+          <fieldset>
+            <legend align="left"><span class="number">1</span> Profile</legend>
+            <label for="name">username</label>
+            <input class="text" type="text" id="name" name="name" placeholder="username or email"><br>
+            <label for="password">password</label>
+            <input class="text" type="password" id="password" name="password" placeholder="password"><br>
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="other">Other<br>
+          </fieldset>
+ 
+          <fieldset>
+          <legend align="left"><span class="number">2</span> About You</legend>
+          <label align="left" for="bio">Biography</label><br>
+          <textarea name="bio" id="bio" rows="5" placeholder="Tell us about yourself using 100 words or less"></textarea><br />
+          <label for="job">Jobs</label><br>
+          <select id="job" name="userjob">
+            <optgroup label="developer">
+              <option value="front_end_developer">Front-End Developer</option>
+              <option value="php_developer">php Developer</option>
+            </optgroup>
+            <optgroup label="design">
+              <option value="web_designer">Web Designer</option>
+              <option value="graphic_designer">Graphic Designer</option>
+            </optgroup>
+          </select>
+            <button type="submit" align="center">submit</button>
+        <br><br><br>    
+        </fieldset>
+        </form>
+      </section>
+      
       <footer>
         <ul>
-          <li><a href="http://www.allentowngroup.com/" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+          <li><a href="bobbidigi34@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
           <li><a href="https://twitter.com/bobbidigi0" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Follow </a></li>
           <li><a href="https://github.com/bobbidigi/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> gitHub</a></li>
         </ul>
