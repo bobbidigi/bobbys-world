@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="final.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
@@ -43,7 +42,7 @@
     <main >
       <section class="content">
         <section class="hero">
-          <article class="description animated fadeInDownBig">
+          <article class="description">
             <h2>Breaking news!</h2><br>
             <h4>Bobby has made major gains in his goal to become a front-end web developer.</h4>
           </article>
@@ -52,25 +51,25 @@
         <section class="news top-news" id="recent">
           <h2 class="news__title">Recent accomplishments<a href="#" class="news__more">+ more</a></h2>
           <ul>
-            <li class="top-news__item wow bounceInRight">
+            <li class="top-news__item">
               <a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/">The web developer bootcamp - Colt Steele.</a>
             </li> 
-            <li class="top-news__item wow bounceInRight">
+            <li class="top-news__item">
               <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893">Responsive web design fundamentals course by Google.</a>
             </li>
-            <li class="top-news__item wow bounceInRight">
+            <li class="top-news__item">
               <a href="https://www.udacity.com/course/responsive-images--ud882">Responsive images course by Google.</a>
             </li>
-            <li class="top-news__item wow bounceInRight">
+            <li class="top-news__item">
               <a href="https://github.com/180-days-of-code/challenge">Organized a group project on gitHub.</a>
             </li>
-            <li class="top-news__item wow bounceInRight">
+            <li class="top-news__item">
               <a href="https://www.codecademy.com/learn/learn-sass">Sass and scss course on CodeCademy.</a>
             </li>
           </ul>
         </section>
 
-        <section class="scores wow bonce">
+        <section class="scores">
          <!-- random design quotes   -->
         <article class="quote-box">
             <div class="quote-start"><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i></div>
@@ -158,23 +157,20 @@
         </section>
       </section>
       
-      <section class="contact none" id="none">
+      <section id="none" class="contact none">
         <form action="https://formspree.io/bobbidigi34@gmail.com" method="POST" name="my_form">
           <fieldset>
-            <legend align="left"><span class="number">1</span> Profile</legend>
-            <label for="name">username</label>
-            <input class="text" type="text" id="name" name="name" placeholder="username or email"><br>
-            <label for="password">password</label>
-            <input class="text" type="password" id="password" name="password" placeholder="password"><br>
-            <input type="radio" name="gender" value="male">Male<br>
-            <input type="radio" name="gender" value="female">Female<br>
-            <input type="radio" name="gender" value="other">Other<br>
+            <legend align="left"><span class="number">1</span> </legend>
+            <label for="name">name</label>
+            <input class="text" type="text" id="name" name="name" placeholder="name"><br>
+            <label for="email">email</label>
+            <input class="text" type="email" id="email" name="email" placeholder="email"><br>
           </fieldset>
  
           <fieldset>
-          <legend align="left"><span class="number">2</span> About You</legend>
-          <label align="left" for="bio">Biography</label><br>
-          <textarea name="bio" id="bio" rows="5" placeholder="Tell us about yourself using 100 words or less"></textarea><br />
+          <legend align="left"><span class="number">2</span> </legend>
+          <label align="left" for="bio">Lets work together</label><br>
+          <textarea name="bio" id="bio" rows="5" placeholder="Tell us a little about your business needs or prospective project."></textarea><br/>
           <label for="job">Jobs</label><br>
           <select id="job" name="userjob">
             <optgroup label="developer">
@@ -226,8 +222,5 @@
     </script>
 <!--   weather-->
      <script type="text/javascript" src="weather.js"></script>
-     <script>
-   		new WOW().init();
-	</script>
   </body>
 </html>
