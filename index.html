@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bobby's World</title>
+    <meta name="description" content="My current progress in learning web development." />
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Bobby's World">
+<meta itemprop="description" content="My current progress in learning web development">
+<meta itemprop="image" content="http://www.allentowngroup.com/bobbys-world/images/bootcamp.jpg">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@bobbidigi0">
+<meta name="twitter:title" content="Bobby's World">
+<meta name="twitter:description" content="Bobby's World has the latest info regarding my progress and projects. I'll try update as often as possible.">
+<meta name="twitter:creator" content="@bobbidigi0">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="http://www.allentowngroup.com/bobbys-world/images/bootcamp.jpg">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Bobby's World" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.allentowngroup.com/" />
+<meta property="og:image" content="http://www.allentowngroup.com/bobbys-world/images/bootcamp.jpg" />
+<meta property="og:description" content="Bobby's World has the latest info regarding my progress and projects. I'll try update as often as possible." />
+   
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
@@ -34,7 +57,7 @@
       <ul class="nav__list">
         <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">About</a></li>
         <li class="nav__item contactBtn"><a href="#none">Contact</a></li>
-        <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">Portfolio</a></li>
+        <li class="nav__item"><a href="#projects">Projects</a></li>
         <li class="nav__item"><a href="#recent">Recent</a></li>
       </ul>
     </nav>
@@ -80,15 +103,16 @@
         </section>
 
         <section class="weather">
-          <span id ="city" class="weather__location"></span>
-          <span class="weather__today">
-           <ul>
+          
+          <div class="weather__today">
+            <span id ="city" class="weather__location"></span>
+            <ul>
                <li> <span id="clouds" class="weather__desc"></span></li>
                <li><img class="weather__today__image" src="images/weather.png" alt="icon of a partially cloudy day"></li>
                <li><span id="temp" class="weather__today__temp"></span></li>
-           </ul>
+            </ul>
 <!--		    <span class="weather__today__deg"></span>-->
-          </span>
+          </div>
 
           <ul class="weather__next">
             <li class="weather__next__item">
@@ -110,7 +134,7 @@
           </ul>
         </section>
 
-        <section class="news recent-news">
+        <section class="news recent-news" id="projects">
           <h2 class="news__title">Recent projects <a href="#" class="news__more" >+ more</a></h2>
           <ul>
             <li class="snippet">
@@ -190,7 +214,7 @@
       
       <footer>
         <ul>
-          <li><a href="bobbidigi34@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+          <li class="contactBtn2"><a href="#none" ><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
           <li><a href="https://twitter.com/bobbidigi0" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Follow </a></li>
           <li><a href="https://github.com/bobbidigi/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> gitHub</a></li>
         </ul>
@@ -213,11 +237,15 @@
       });
         
       var contact_btn = document.querySelector('.contactBtn');
+      var contact_btn2 = document.querySelector('.contactBtn2');    
       var display_none = document.querySelector('.none');
         
       contact_btn.addEventListener('click', function(){
         display_none.classList.remove('none');
       });
+      contact_btn2.addEventListener('click', function(){
+        display_none.classList.remove('none');
+      });    
         
     </script>
 <!--   weather-->
