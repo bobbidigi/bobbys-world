@@ -77,17 +77,20 @@
         display: none;
     }
     .weather__location{
-        padding: .3em;
+        padding-bottom: .3em;
     }
     .weather__today{
         width: 100%;
     }
-    .weather__today__image{
-        width: 30%;
-    }
+    .weather__today__image{    
+      
+    } 
 }
 
-@media screen and (min-width: 611px) {
+@media screen and (min-width: 611px) {  
+  .weather .weather__location{
+    margin-bottom: .5em;
+  }    
   .hero {
     order: 0;
   }
@@ -110,9 +113,7 @@
 	margin-top:auto;  
 	margin-bottom: auto;  
   }
-  .weather {
-    font-size: 1em;
-  }
+  
   .quote {
   font-size: 1.2rem;
  }
@@ -123,7 +124,6 @@
     width: 850px;
     margin-left: auto;
     margin-right: auto;
-  }
-      
+  }      
 }
 

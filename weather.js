@@ -23,7 +23,7 @@ $(document).ready(function(){
       }
       
       $("#city").html(city);
-      $("#temp").html(celsius+"°C");
+      $("#temp").html(fahrenheit+"℉");
 //	"<img src= './images/weather.png'>"	
       $("#humidity").html("Humidity: "+humidity+"%");
       $("#windSpeed").html("Wind Speed: "+windSpeed+"m/s");
