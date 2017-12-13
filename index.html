@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <!--   weather-->
+     <script type="text/javascript" src="weather.js"></script>
   </head>
   <body>
 
@@ -111,7 +113,8 @@
             <span id ="city" class="weather__location"></span>
             <ul>
                <li> <span id="clouds" class="weather__desc"></span></li>
-               <li><img class="weather__today__image" src="images/weather.png" alt="icon of a partially cloudy day"></li>
+<!--               <li><img class="weather__today__image" src="images/weather.png" alt="icon of a partially cloudy day"></li>-->  
+               <span id="weather__image"></span>
                <li><span id="temp" class="weather__today__temp"></span></li>
             </ul>
 <!--		    <span class="weather__today__deg"></span>-->
@@ -259,7 +262,6 @@
       });    
         
     </script>
-<!--   weather-->
-     <script type="text/javascript" src="weather.js"></script>
+
   </body>
 </html>
