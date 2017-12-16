@@ -47,9 +47,14 @@ ul {
  */
 
 .header {
-  color: rgb(0, 162, 208);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   min-height: 56px;
+/*    background-color: rgba(0, 162, 208, 0.4);  	*/
+  background: rgb(30,255,150); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(30,255,150,.5) 0%, rgba(194,81,198,.5) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(30,255,150,.5) 0%,rgba(194,81,198,.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(30,255,150,.5) 0%,rgba(194,81,198,.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1eff96', endColorstr='#c251c6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */        
   transition: min-height 0.3s;
 }
 
@@ -60,19 +65,24 @@ ul {
 }
 
 .header__logo {
-  height: 72px;
-  margin-right: 1em;
-  vertical-align: top;
-  margin-top: 12px;
-  margin-left: 1em;	
+/*  position: absolute;    */
+  display: inline-block;    
+  border-radius: 50%;    
+/*  height: 72px;*/
+/*    height: 48px;*/
+/*  margin-right: 1em;*/
+/*  vertical-align: top;*/
+/*  margin-top: 12px;*/
+/*  margin-left: 1em;	*/
 }
 
-.header__title {	
+.header__title {
+  font-size: 1em;    
+  position: absolute;
+  padding: 1em;    
   font-weight: 400;
-  font-size: 3em;
-  margin: 0.75em 0.25em;
   display: inline-block;
-/*  color: #212121;*/
+  color: #fff;
 }
 
 /*

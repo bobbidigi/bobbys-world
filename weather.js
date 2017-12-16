@@ -70,7 +70,7 @@ $(document).ready(function(){
        console.log("current Time is " + hour);
         
       var getImageSrc = '';
-      if (hour < 6 || hour > 20){
+      if (hour < 7 || hour > 18){
           getImageSrc = 'https://78.media.tumblr.com/265482623fa3dc9c9138f9d0ad546fb9/tumblr_ovuttlPUr11v3aao4o1_500.gif';
       }else{
          getImageSrc = 'images/hero-bg.jpg';  
