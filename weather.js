@@ -2,10 +2,10 @@
 
 $(document).ready(function(){
   
-  $.getJSON("http://freegeoip.net/json/", function(ipGeo){
+  $.getJSON("https://freegeoip.net/json/", function(ipGeo){
     var city = ipGeo.city
     //var country = ipGeo.country_name
-    var api="http://api.openweathermap.org/data/2.5/weather?";
+    var api="https://api.openweathermap.org/data/2.5/weather?";
     var lat = "lat=" + ipGeo.latitude;
     var long = "&lon=" + ipGeo.longitude;
     var appid = "&APPID=894f152b37bf9b22da6f4ccbbf502844"
@@ -86,7 +86,7 @@ $(document).ready(function(){
     
 function getQuote() {
     var cb = Math.round(new Date().getTime() / 1000);
-    $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=" + cb, function(a) {
+    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=" + cb, function(a) {
         console.log(a);
         var currentQuote = a[0].content;
         var quoteAuthor = a[0].title;

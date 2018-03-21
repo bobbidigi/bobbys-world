@@ -6,7 +6,9 @@ body {
 .snippet__thumbnail > img {
   width: 100%;
 }
-
+.snippet__thumbnail-a > img {
+  width: 100%;
+}
 .snippet {
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +20,7 @@ body {
   margin: 0 0 0.5em;
 }
 
-.snippet__thumbnail {
+.snippet__thumbnail, .snippet__thumbnail-a {
   order: 1;
   width: 30%;
 }
@@ -35,7 +37,7 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  .snippet__thumbnail {
+  .snippet__thumbnail, .snippet__thumbnail-a {
     display: none;
   }
 
@@ -55,7 +57,7 @@ body {
   .snippet__title {
   }
 
-  .snippet__thumbnail { 
+  .snippet__thumbnail, .snippet__thumbnail-a { 
     width: 30%;
     margin: 0;
   }
@@ -70,7 +72,7 @@ body {
   .snippet__title {
   }
 
-  .snippet__thumbnail {
+  .snippet__thumbnail, .snippet__thumbnail-a {
     width: 30%;
     height: 150px;  
     margin-right: 0;

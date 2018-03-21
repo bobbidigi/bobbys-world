@@ -125,7 +125,11 @@
   }
   .quote{
 	font-size: 1.1rem;	
-	}	
+	}
+    footer span{
+        display: inline-block;
+        margin-left: 5px;
+    }
 }
 
 @media screen and (min-width: 700px) {
