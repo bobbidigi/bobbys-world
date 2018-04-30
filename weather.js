@@ -68,16 +68,16 @@ $(document).ready(function(){
        var currentTime = new Date();
        hour = currentTime.getHours();
        console.log("current Time is " + hour);
-        
-      var getImageSrc = '';
-      if (hour < 7 || hour > 18){
-          getImageSrc = 'https://78.media.tumblr.com/265482623fa3dc9c9138f9d0ad546fb9/tumblr_ovuttlPUr11v3aao4o1_500.gif';
-      }else{
-         getImageSrc = 'images/hero-bg.jpg';  
-      }    
-       $('.weather').css('background-image', 'url(' + getImageSrc + ')');
-      $('.weather').css('background-size', 'cover');  
-      $('.weather').css('repeat', 'no-repeat');    
+//        
+//      var getImageSrc = '';
+//      if (hour < 7 || hour > 18){
+//          getImageSrc = 'https://78.media.tumblr.com/265482623fa3dc9c9138f9d0ad546fb9/tumblr_ovuttlPUr11v3aao4o1_500.gif';
+//      }else{
+//         getImageSrc = 'images/hero-bg.jpg';  
+//      }    
+//       $('.weather').css('background-image', 'url(' + getImageSrc + ')');
+//      $('.weather').css('background-size', 'cover');  
+//      $('.weather').css('repeat', 'no-repeat');    
     });
   });
     

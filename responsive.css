@@ -48,7 +48,7 @@
 /*    vertical-align: top;*/
 /*    margin-bottom: 1em;*/
   }
-  .header__title {
+  .header__title { 
     display: inline-block;
     width: 71%;
     text-align: center;
@@ -116,9 +116,12 @@
     font-size: 2em;
     letter-spacing: 1px;
     font-weight: 500;  
+    }
+    .weather{
+/*        position: fixed;*/
     }    
   .weather .weather__location{  
-    margin-bottom: .5em;
+    margin-bottom: .66em;
   }    
   .hero {
     order: 0;
@@ -134,30 +137,35 @@
 
 @media screen and (min-width: 700px) {
   .hero {
-    width: 50%;
+/*    width: 50%;*/
   }
   .top-news {
-    order: 1;
+    order: 2;
     width: 50%;
   }
   .scores {
-    order: 2;
+    order: 1;  
     width: 50%;
-	margin-top:auto;  
-	margin-bottom: auto;  
+    display: flex;
+    background: rgb(0, 162, 208);  
+    flex-direction: column; 
+    align-self: stretch;
   }
-  
+  .quote-box{
+       
+  }
   .quote {
   font-size: 1.2rem;
  }
 }
 
 @media screen and (min-width: 850px) {
-  main, .header__inner, .content {
+  main, .header__inner, .content, .weather {
     width: 850px;
     margin-left: auto;
     margin-right: auto;
-  }      
+  }  
+     
 }
 @media screen and (min-width: 1111px) {
   .header__title {
