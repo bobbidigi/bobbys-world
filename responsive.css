@@ -1,177 +1,162 @@
-@media screen and (max-width: 300px){
+@media screen and (max-width: 300px) {
     .header__title {
-      display: inline-block;
-      width: 93%;
-      text-align: center;
-/*      position: absolute;*/
-      font-size: 1.2em;
-  }
+        display: inline-block;
+        width: 93%;
+        text-align: center;
+        /*      position: absolute;*/
+        font-size: 1.2em;
+    }
     .header__menu {
-/*    display: inline-block;*/
-/*    position: absolute;*/
-/*    right: 0;*/
-    padding: .7em;
-  }
-}
-@media screen and (max-width: 320px){
-    .header__logo{ 
-        -webkit-transform: translate(-300px, 0);
-        transform: translate(-300px, 0);
-/*        vertical-align: top;*/
-/*        margin-top: 8px;*/
-/*        margin-left: 8px;	*/
-    }
-   
-}
-@media screen and (max-width: 399px){
-    .header__logo{
-/*        margin: .5em;*/
-/*        height: 40px;*/
-/*        vertical-align: top;*/
-/*        margin-top: 9px;*/
-/*        margin-left: 9px;	*/
+        /*    display: inline-block;*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        padding: .7em;
     }
 }
-@media screen and (max-width: 575px){
-    .header__logo{
-/*    margin: .5em;    */
-    height: 40px;
-/*    vertical-align: top;*/
-/*    margin-bottom: 1em;*/
+
+@media screen and (max-width: 320px) {
+    .header__logo {
+        width: 60px;
     }
+}
+
+@media screen and (max-width: 399px) {
+    .header__logo {}
+}
+
+@media screen and (max-width: 575px) {
+    .header__logo {}
 }
 
 @media screen and (max-width: 610px) {
-  .header__logo {  
-    height: 48px;
-    margin: .5em;  
-/*    vertical-align: top;*/
-/*    margin-bottom: 1em;*/
-  }
-  .header__title { 
-    display: inline-block;
-    width: 71%;
-    text-align: center;
-    position: absolute;
-    font-size: 1.5em;
-/*    vertical-align: bottom; */
-  }
-    
-.nav {
-    z-index: 10;
-    background-color: #fff;
-    width: 100%;
-    position: absolute;
-    /* This trasform moves the drawer off canvas. */
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-    /* Optionally, we animate the drawer. */
-    transition: transform 0.3s ease;
-  }    
-  .nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); 
-  }
-  .nav__item {
-    display: list-item;
-    border-bottom: 1px solid #E0E0E0;
-    width: 100%;
-    text-align: left;
-  }
-  .header__menu {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    padding: 1em;
-  }
-  .header__menu svg {
-    width: 32px;
-    fill: #fff;
-  }
-  .weather__next__item{
+    .header__logo {}
+    .header__title {
+        display: inline-block;
+        width: 71%;
+        text-align: center;
+        position: absolute;
+        font-size: 1.5em;
+        /*    vertical-align: bottom; */
+    }
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+    .header__menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 1em;
+    }
+    .header__menu svg {
+        width: 32px;
+        fill: #fff;
+    }
+    .weather__next__item {
         display: none;
     }
-    .weather__location{
+    .weather__location {
         padding-bottom: .3em;
     }
-    .weather__today{
+    .weather__today {
         width: 100%;
     }
-    .weather__today__image{    
-      
-    } 
+    .weather__today__image {}
 }
 
 @media screen and (min-width: 611px) {
-  .header__logo{
-    height: 3em;
-    margin: .5em;        
-  }
-  .header__title{
-    margin: -.15em auto;
-    display: inline-block;
-    width: 71%;
-    text-align: center;
-    position: absolute;
-    font-size: 2em;
-    letter-spacing: 1px;
-    font-weight: 500;  
+    .header__logo {
+        width: 75px;
+        /* height: 3em; */
+        height: auto;
+        margin: .5em;
     }
-    .weather{
-/*        position: fixed;*/
-    }    
-  .weather .weather__location{  
-    margin-bottom: .66em;
-  }    
-  .hero {
-    order: 0;
-  }
-  .quote{
-	font-size: 1.1rem;	
-	}
-    footer span{
+    .header__title {
+        /* margin-top: auto; */
+        display: inline-block;
+        width: 71%;
+        text-align: center;
+        position: absolute;
+        font-size: 2em;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .weather {
+        /*        position: fixed;*/
+    }
+    .weather .weather__location {
+        margin-bottom: .66em;
+    }
+    .hero {
+        order: 0;
+    }
+    .quote {
+        font-size: 1.1rem;
+    }
+    footer span {
         display: inline-block;
         margin-left: 5px;
     }
 }
 
 @media screen and (min-width: 700px) {
-  .hero {
-/*    width: 50%;*/
-  }
-  .top-news {
-    order: 2;
-    width: 50%;
-  }
-  .scores {
-    order: 1;  
-    width: 50%;
-    display: flex;
-    background: rgb(0, 162, 208);  
-    flex-direction: column; 
-    align-self: stretch;
-  }
-  .quote-box{
-       
-  }
-  .quote {
-  font-size: 1.2rem;
- }
+    .hero {
+        /*    width: 50%;*/
+    }
+    .top-news {
+        order: 2;
+        width: 50%;
+    }
+    .scores {
+        order: 1;
+        width: 50%;
+        display: flex;
+        background: rgb(0, 162, 208);
+        flex-direction: column;
+        align-self: stretch;
+    }
+    .quote-box {}
+    .quote {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 850px) {
-  main, .header__inner, .content, .weather {
-    width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-  }  
-     
-}
-@media screen and (min-width: 1111px) {
-  .header__title {
-/*    width: 850px;*/
-/*    margin: 0 auto;*/
-    margin-left: -6.66%;
-  }      
+    main,
+    .header__inner,
+    .content,
+    .weather {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header__logo {
+        width: 80px;
+    }
 }
 
+@media screen and (min-width: 1111px) {
+    .header__logo {
+        width: 90px;
+    }
+    .header__title {
+        margin-left: -6.66%;
+    }
+}

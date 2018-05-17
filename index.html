@@ -1,33 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bobby's World</title>
     <meta name="description" content="My current progress in learning web development." />
 
-<!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="Bobby's World">
-<meta itemprop="description" content="My current progress in learning web development">
-<meta itemprop="image" content="http://www.allentowngroup.com/bobbys-world/images/bootcamp.jpg">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Bobby's World">
+    <meta itemprop="description" content="My current progress in learning web development">
+    <meta itemprop="image" content="http://www.allentowngroup.com/bobbys-world/images/bootcamp.jpg">
 
-<!-- Twitter Card data -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@bobbidigi0">
-<meta name="twitter:title" content="Bobby's World">
-<meta name="twitter:description" content="Bobby's World has the latest info regarding my progress and projects. I'll try update as often as possible.">
-<meta name="twitter:creator" content="@bobbidigi0">
-<!-- Twitter summary card with large image must be at least 280x150px -->
-<meta name="twitter:image:src" content="http://www.allentowngroup.com/bobbys-world/images/bootcamp.jpg">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bobbidigi0">
+    <meta name="twitter:title" content="Bobby's World">
+    <meta name="twitter:description" content="Bobby's World has the latest info regarding my progress and projects. I'll try update as often as possible.">
+    <meta name="twitter:creator" content="@bobbidigi0">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="http://www.allentowngroup.com/bobbys-world/images/bootcamp.jpg">
 
-<!-- Open Graph data -->
-<meta property="og:title" content="Bobby's World" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.allentowngroup.com/bobbys-world/" />
-<meta property="og:image" content="http://www.allentowngroup.com/bobbys-world/images/bootcamp.jpg" />
-<meta property="og:description" content="Bobby's World has the latest info regarding my progress and projects. I'll try update as often as possible." />
-   
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Bobby's World" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.allentowngroup.com/bobbys-world/" />
+    <meta property="og:image" content="http://www.allentowngroup.com/bobbys-world/images/bootcamp.jpg" />
+    <meta property="og:description" content="Bobby's World has the latest info regarding my progress and projects. I'll try update as often as possible." />
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
@@ -35,91 +36,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-     <!--   weather-->
-     <script type="text/javascript" src="weather.js"></script>
-  </head>
-  <body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--   weather-->
+    <script type="text/javascript" src="weather.js"></script>
+</head>
+
+<body>
 
     <header class="header">
-      <div class="header__inner">
-        <img class="header__logo" src="images/ra-logo.png" alt="iconic view of a cityscape">
-        <h1 class="header__title">
-          BOBBY'S WORLD
-        </h1>
-        <a id="menu" class="header__menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <div class="header__inner">
+            <img class="header__logo" src="images/bobbidigi-logo.png" alt="iconic view of a cityscape">
+            <h1 class="header__title">
+                BOBBY'S WORLD
+            </h1>
+            <a id="menu" class="header__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
           </svg>
-        </a>
-      </div>
+            </a>
+        </div>
     </header>
 
     <nav id="drawer" class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">About</a></li>
-        <li class="nav__item contactBtn"><a href="#none">Contact</a></li>
-        <li class="nav__item"><a href="#projects">Projects</a></li>
-        <li class="nav__item"><a href="#recent">Recent</a></li>
-      </ul>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="http://www.allentowngroup.com/about-robert-allen/">About</a></li>
+            <li class="nav__item contactBtn"><a href="#none">Contact</a></li>
+            <li class="nav__item"><a href="#projects">Projects</a></li>
+            <li class="nav__item"><a href="#recent">Recent</a></li>
+        </ul>
     </nav>
 
-    <main >
-      <section class="content">
-        <div class="weather">
-         <div class="weather__today">
-            <span id ="city" class="weather__location"></span>
-            <ul>
-               <li> <span id="clouds" class="weather__desc"></span></li>  
-               <span id="weather__image"></span>
-               <li><span id="temp" class="weather__today__temp"></span></li>
-            </ul>
-          </div>
-        </div>  
-        <section class="hero">
-          <article class="description">
-            <h2>Breaking news!</h2><br>
-            <h4>Bobby has made major gains in his goal to become a front-end web developer.</h4>
-          </article>
-        </section>
+    <main>
+        <section class="content">
+            <div class="weather">
+                <div class="weather__today">
+                    <span id="city" class="weather__location"></span>
+                    <ul>
+                        <li> <span id="clouds" class="weather__desc"></span></li>
+                        <span id="weather__image"></span>
+                        <li><span id="temp" class="weather__today__temp"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <section class="hero">
+                <article class="description">
+                    <h2>Breaking news!</h2><br>
+                    <h4>Bobby has made major gains in his goal to become a front-end web developer.</h4>
+                </article>
+            </section>
 
-        <section class="news top-news" id="recent">
-          <h2 class="news__title">Recent accomplishments<a href="#" class="news__more">+ more</a></h2>
-          <ul>
-             <li class="top-news__item">
-              <a href="https://www.youtube.com/watch?v=jV8B24rSN5o" target="_blank">CSS grid with Traversy Media.</a>
-            </li>
-            <li class="top-news__item">
-              <a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/" target="_blank">The web developer bootcamp - Colt Steele.</a>
-            </li> 
-            <li class="top-news__item">
-              <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893" target="_blank">Responsive web design fundamentals course by Google.</a>
-            </li>
-            <li class="top-news__item">
-              <a href="https://www.udacity.com/course/responsive-images--ud882" target="_blank">Responsive images course by Google.</a>
-            </li>
-            <li class="top-news__item">
-              <a href="https://github.com/180-days-of-code/challenge" target="_blank">Organized a group project on gitHub.</a>
-            </li>
-            <li class="top-news__item">
-              <a href="https://www.codecademy.com/learn/learn-sass" target="_blank">Sass and scss course on CodeCademy.</a>
-            </li>
-          </ul>
-        </section>
+            <section class="news top-news" id="recent">
+                <h2 class="news__title">Recent accomplishments<a href="#" class="news__more">+ more</a></h2>
+                <ul>
+                    <li class="top-news__item">
+                        <a href="https://www.youtube.com/watch?v=jV8B24rSN5o" target="_blank">CSS grid with Traversy Media.</a>
+                    </li>
+                    <li class="top-news__item">
+                        <a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/" target="_blank">The web developer bootcamp - Colt Steele.</a>
+                    </li>
+                    <li class="top-news__item">
+                        <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893" target="_blank">Responsive web design fundamentals course by Google.</a>
+                    </li>
+                    <li class="top-news__item">
+                        <a href="https://www.udacity.com/course/responsive-images--ud882" target="_blank">Responsive images course by Google.</a>
+                    </li>
+                    <li class="top-news__item">
+                        <a href="https://github.com/180-days-of-code/challenge" target="_blank">Organized a group project on gitHub.</a>
+                    </li>
+                    <li class="top-news__item">
+                        <a href="https://www.codecademy.com/learn/learn-sass" target="_blank">Sass and scss course on CodeCademy.</a>
+                    </li>
+                </ul>
+            </section>
 
-        <section class="scores">
-         <!-- random design quotes   -->
-        <article class="quote-box">
-            <div class="quote-start"><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i></div>
-            <h5 class="quote"> </h5>
-            <h5 class="quote-author"></h5>
-            <div class="quote-end"><i class="fa fa-quote-right fa-lg" aria-hidden="true"></i></div>
-        </article>
-        </section>
+            <section class="scores">
+                <!-- random design quotes   -->
+                <article class="quote-box">
+                    <div class="quote-start"><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i></div>
+                    <h5 class="quote"> </h5>
+                    <h5 class="quote-author"></h5>
+                    <div class="quote-end"><i class="fa fa-quote-right fa-lg" aria-hidden="true"></i></div>
+                </article>
+            </section>
 
-<!--        <section class="weather">-->
-          
-<!--
+            <!--        <section class="weather">-->
+
+            <!--
           <div class="weather__today">
             <span id ="city" class="weather__location"></span>
             <ul>
@@ -130,7 +132,7 @@
           </div>
 -->
 
-<!--
+            <!--
           <ul class="weather__next">
             <li class="weather__next__item">
               <span>Mon</span>
@@ -152,98 +154,99 @@
         </section>
 -->
 
-        <section class="news recent-news" id="projects">
-          <h2 class="news__title">Recent projects <a href="#" class="news__more" >+ more</a></h2>
-          <ul>
-          
-          <li class="snippet">
-                <a href="http://coderdojohawthorn.tech/" class="snippet__thumbnail-a" target="_blank">
-                <img  src='images/og-coderdojo-home.png' alt="picture of programming">
-                </a>
-                
-              <h3 class="snippet__title"><a href="http://coderdojohawthorn.tech/" target="_blank">CoderDojo</a></h3>
-              <p class="snippet__description">I volunteered to rebuild from scratch the Hawthorn CoderDojo website. CoderDojo is a global volunteer-led community of free programming clubs for youth between 7 and 17 to learn coding of their choice. 3/15/18 
-              </p>
-           </li>
-           
-           <li class="snippet">
-                <a href="https://protected-beach-20008.herokuapp.com/campgrounds" class="snippet__thumbnail-a" target="_blank">
-                <img  src='images/yelp_camp.png' alt="picture of programming">
-                </a>
-                
-              <h3 class="snippet__title"><a href="https://protected-beach-20008.herokuapp.com/campgrounds" target="_blank">Yelp Camp</a></h3>
-              <p class="snippet__description">YelpCamp is a project that was completed as a part of Colt Steele's bootcamp. My version of YelpCamp has a few tweaks beyond what was coded in class. Different setups are needed if you plan on using YelpCamp locally (or Cloud9) verus the Heroku + MongoLab setup. This is accomplished using enviornment variables. 2/15/18 
-              </p>
-           </li>
-           
-           <li class="snippet">
-              <div class="snippet__thumbnail">
-                <img src='https://static.pexels.com/photos/248515/pexels-photo-248515.png' alt="picture of programming">
-              </div>
-              <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/pen/MONzOL" target="_blank">CSS Grid</a></h3>
-              <p class="snippet__description">A CSS grid project for the new CSS Grid layout and how to use grid based layouts and alignments. I tried to use properties for containers and items. 1/1/18
-              </p>
-            </li>
-            <li class="snippet">
-              <div class="snippet__thumbnail">
-                <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
-              </div>
-              <h3 class="snippet__title"><a href="http://www.allentowngroup.com/tap-dat/" target="_blank">Tap Dat</a></h3>
-              <p class="snippet__description">Tap Dat is a portable animation and sound kit. With the touch of a finger create melodies charged with moving shapes. Warning: contains flashing images.
-              </p>
-            </li>
-            <li class="snippet">
-              <div class="snippet__thumbnail">
-                <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
-              </div>
-              <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/gGJvZO" target="_blank">Guess the RGB color</a></h3>
-              <p class="snippet__description">A fun game of guessing the RGB color.
-              </p>
-            </li>
-            <li class="snippet">
-              <div class="snippet__thumbnail">
-                <img src='https://static.teamtreehouse.com/assets/marketing/opengraph/logo_facebook-5a7642409483233360d948ca4dd6840de0a6083475af4b047d452b77b00ca68a.png' alt="Treehouse code school logo">
-              </div>
-              <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/JOXZLZ" target="_blank">Made a pretty cool login form</a></h3>
-              <p class="snippet__description">Using a Treehouse tutorial I made a nice login form.
-              </p>
-            </li>
-            <li class="snippet">
-              <div class="snippet__thumbnail">
-                <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
-              </div>
-              <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/EbNBoo" target="_blank">Made a to-do-list</a></h3>
-              <p class="snippet__description">Using javascript I made a to-do list.
-              </p>
-            </li>
-            <li class="snippet">
-              <div class="snippet__thumbnail">
-                <img src='images/bot.jpg' alt="picture of a girl with a large, stuffed dog toy">
-              </div>
-              <h3 class="snippet__title"><a href="https://twitter.com/LondonArtz" target="_blank">Twitter bot</a></h3>
-              <p class="snippet__description">This was a spontaneous team project with Sirani McNeill. We made a Twitter bot using python.
-              </p>
-            </li>
-          </ul>
+            <section class="news recent-news" id="projects">
+                <h2 class="news__title">Recent projects <a href="#" class="news__more">+ more</a></h2>
+                <ul>
+
+                    <li class="snippet">
+                        <a href="http://coderdojohawthorn.tech/" class="snippet__thumbnail-a" target="_blank">
+                            <img src='images/og-coderdojo-home.png' alt="picture of programming">
+                        </a>
+
+                        <h3 class="snippet__title"><a href="http://coderdojohawthorn.tech/" target="_blank">CoderDojo</a></h3>
+                        <p class="snippet__description">I volunteered to rebuild from scratch the Hawthorn CoderDojo website. CoderDojo is a global volunteer-led community of free programming clubs for youth between 7 and 17 to learn coding of their choice. 3/15/18
+                        </p>
+                    </li>
+
+                    <li class="snippet">
+                        <a href="https://protected-beach-20008.herokuapp.com/campgrounds" class="snippet__thumbnail-a" target="_blank">
+                            <img src='images/yelp_camp.png' alt="picture of programming">
+                        </a>
+
+                        <h3 class="snippet__title"><a href="https://protected-beach-20008.herokuapp.com/campgrounds" target="_blank">Yelp Camp</a></h3>
+                        <p class="snippet__description">YelpCamp is a project that was completed as a part of Colt Steele's bootcamp. My version of YelpCamp has a few tweaks beyond what was coded in class. Different setups are needed if you plan on using YelpCamp locally (or Cloud9)
+                            verus the Heroku + MongoLab setup. This is accomplished using enviornment variables. 2/15/18
+                        </p>
+                    </li>
+
+                    <li class="snippet">
+                        <div class="snippet__thumbnail">
+                            <img src='https://static.pexels.com/photos/248515/pexels-photo-248515.png' alt="picture of programming">
+                        </div>
+                        <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/pen/MONzOL" target="_blank">CSS Grid</a></h3>
+                        <p class="snippet__description">A CSS grid project for the new CSS Grid layout and how to use grid based layouts and alignments. I tried to use properties for containers and items. 1/1/18
+                        </p>
+                    </li>
+                    <li class="snippet">
+                        <div class="snippet__thumbnail">
+                            <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
+                        </div>
+                        <h3 class="snippet__title"><a href="http://www.allentowngroup.com/tap-dat/" target="_blank">Tap Dat</a></h3>
+                        <p class="snippet__description">Tap Dat is a portable animation and sound kit. With the touch of a finger create melodies charged with moving shapes. Warning: contains flashing images.
+                        </p>
+                    </li>
+                    <li class="snippet">
+                        <div class="snippet__thumbnail">
+                            <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
+                        </div>
+                        <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/gGJvZO" target="_blank">Guess the RGB color</a></h3>
+                        <p class="snippet__description">A fun game of guessing the RGB color.
+                        </p>
+                    </li>
+                    <li class="snippet">
+                        <div class="snippet__thumbnail">
+                            <img src='https://static.teamtreehouse.com/assets/marketing/opengraph/logo_facebook-5a7642409483233360d948ca4dd6840de0a6083475af4b047d452b77b00ca68a.png' alt="Treehouse code school logo">
+                        </div>
+                        <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/JOXZLZ" target="_blank">Made a pretty cool login form</a></h3>
+                        <p class="snippet__description">Using a Treehouse tutorial I made a nice login form.
+                        </p>
+                    </li>
+                    <li class="snippet">
+                        <div class="snippet__thumbnail">
+                            <img src='images/bootcamp.jpg' alt="picture of a girl with a large, stuffed dog toy">
+                        </div>
+                        <h3 class="snippet__title"><a href="https://codepen.io/bobbidigi34/full/EbNBoo" target="_blank">Made a to-do-list</a></h3>
+                        <p class="snippet__description">Using javascript I made a to-do list.
+                        </p>
+                    </li>
+                    <li class="snippet">
+                        <div class="snippet__thumbnail">
+                            <img src='images/bot.jpg' alt="picture of a girl with a large, stuffed dog toy">
+                        </div>
+                        <h3 class="snippet__title"><a href="https://twitter.com/LondonArtz" target="_blank">Twitter bot</a></h3>
+                        <p class="snippet__description">This was a spontaneous team project with Sirani McNeill. We made a Twitter bot using python.
+                        </p>
+                    </li>
+                </ul>
+            </section>
         </section>
-      </section>
-      
-      <section id="none" class="contact none">
-        <form action="https://formspree.io/bobbidigi34@gmail.com" method="POST" name="my_form">
-          <fieldset>
-            <legend align="left"><span class="number">1</span> </legend>
-            <label for="name">name</label>
-            <input class="text" type="text" id="name" name="name" placeholder="name"><br>
-            <label for="email">email</label>
-            <input class="text" type="email" id="email" name="email" placeholder="email"><br>
-          </fieldset>
- 
-          <fieldset>
-          <legend align="left"><span class="number">2</span> </legend>
-          <label align="left" for="bio">Lets work together</label><br>
-          <textarea name="bio" id="bio" rows="5" placeholder="Tell us a little about your business needs or prospective project."></textarea><br/>
-          <label for="job">Jobs</label><br>
-          <select id="job" name="userjob">
+
+        <section id="none" class="contact none">
+            <form action="https://formspree.io/bobbidigi34@gmail.com" method="POST" name="my_form">
+                <fieldset>
+                    <legend align="left"><span class="number">1</span> </legend>
+                    <label for="name">name</label>
+                    <input class="text" type="text" id="name" name="name" placeholder="name"><br>
+                    <label for="email">email</label>
+                    <input class="text" type="email" id="email" name="email" placeholder="email"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend align="left"><span class="number">2</span> </legend>
+                    <label align="left" for="bio">Lets work together</label><br>
+                    <textarea name="bio" id="bio" rows="5" placeholder="Tell us a little about your business needs or prospective project."></textarea><br/>
+                    <label for="job">Jobs</label><br>
+                    <select id="job" name="userjob">
             <optgroup label="developer">
               <option value="front_end_developer">Front-End Developer</option>
               <option value="php_developer">php Developer</option>
@@ -253,73 +256,73 @@
               <option value="graphic_designer">Graphic Designer</option>
             </optgroup>
           </select>
-            <button type="submit" align="center">submit</button>
-        <br><br><br>    
-        </fieldset>
-        </form>
-      </section>
-      
-      <footer>
-        <ul>
-          <li class="contactBtn2"><a href="mailto:bobbidigi34@gmail.com?Subject=bobbys%20world" ><i class="fa fa-envelope-o" aria-hidden="true"></i><span>  Contact</span></a></li>
-          <li><a href="https://twitter.com/bobbidigi0" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span> Follow</span></a></li>
-          <li><a href="https://github.com/bobbidigi/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span> gitHub</span></a></li>
-        </ul>
-      </footer>
+                    <button type="submit" align="center">submit</button>
+                    <br><br><br>
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <ul>
+                <li class="contactBtn2"><a href="mailto:bobbidigi34@gmail.com?Subject=bobbys%20world"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>  Contact</span></a></li>
+                <li><a href="https://twitter.com/bobbidigi0" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span> Follow</span></a></li>
+                <li><a href="https://github.com/bobbidigi/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span> gitHub</span></a></li>
+            </ul>
+        </footer>
     </main>
     <script>
-      /*
-       * Open the drawer when the menu ison is clicked.
-       */
-      const menu = document.querySelector('#menu');
-      const main = document.querySelector('main');
-      const drawer = document.querySelector('.nav');
-          
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
-     // hide and display contact form    
-      const contact_btn = document.querySelector('.contactBtn');
-      const contact_btn2 = document.querySelector('.contactBtn2');    
-      const display_none = document.querySelector('.none');
-        
-      contact_btn.addEventListener('click', function(){
-        display_none.classList.remove('none');
-      });
-      contact_btn2.addEventListener('click', function(){
-        display_none.classList.remove('none');
-      });    
-        
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+        /*
+         * Open the drawer when the menu ison is clicked.
+         */
+        const menu = document.querySelector('#menu');
+        const main = document.querySelector('main');
+        const drawer = document.querySelector('.nav');
 
-      // Store hash
-      var hash = this.hash;
+        menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+        // hide and display contact form    
+        const contact_btn = document.querySelector('.contactBtn');
+        const contact_btn2 = document.querySelector('.contactBtn2');
+        const display_none = document.querySelector('.none');
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-        
+        contact_btn.addEventListener('click', function() {
+            display_none.classList.remove('none');
+        });
+        contact_btn2.addEventListener('click', function() {
+            display_none.classList.remove('none');
+        });
+
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
     </script>
 
-  </body>
+</body>
+
 </html>
